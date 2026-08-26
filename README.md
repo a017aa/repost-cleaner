@@ -1,7 +1,7 @@
 # Repost Cleaner
 
 ## Task
-Removing a large number of TikTok reposts manually is tedious and time‑consuming. TikTok does not provide a built‑in way to bulk remove reposts; you must open each video, click the repost button, close it, and repeat. The challenge is to automate this process safely and efficiently without triggering TikTok's rate limits or accidentally removing your own original posts.
+An open-source tool for removing a large number of TikTok reposts. Manually removing TikTok reposts is tedious and time‑consuming. TikTok does not provide a built‑in way to bulk remove reposts; you must open each video, click the repost button, close it, and repeat. The challenge is to automate this process safely and efficiently without triggering TikTok's rate limits or accidentally removing your own original posts.
 
 ## Description
 Repost Cleaner is a Chrome extension that automates the removal of your TikTok reposts. It scans your profile's **Reposts** tab, finds up to a configurable number of reposts (50–300), and then removes them one by one using TikTok's own lightbox navigation. The extension:

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- background -->
+  <rect x="0" y="0" width="128" height="128" rx="28" fill="#242424"/>
+
+  <!-- repost loop -->
+  <g fill="none" stroke="#F0997B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- top line + arrowhead at right end -->
+    <path d="M28 60 V52 A16 16 0 0 1 44 36 H100"/>
+    <path d="M84 20 L100 36 L84 52"/>
+
+    <!-- bottom line + arrowhead at left end -->
+    <path d="M100 68 V76 A16 16 0 0 1 84 92 H28"/>
+    <path d="M44 108 L28 92 L44 76"/>
+  </g>
+</svg>

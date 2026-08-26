@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+  <title>Repost Cleaner</title>
+  <link rel="stylesheet" href="sidepanel.css">
+  <link rel="icon" href="icons/icon.svg">
+</head>
+<body class="card">
+  <div class="header">
+    <div class="title">
+      <i class="ti ti-recycle" style="font-size:20px; color:#F0997B;"></i>
+      <h1>Repost Cleaner</h1>
+    </div>
+    <p class="subtitle">Clean up to 300 reposts at a time</p>
+  </div>
+
+  <div class="status-bar" id="statusBar">
+    <i id="statusIcon" class="ti ti-circle-check" style="font-size:15px; color:#5DCAA5;"></i>
+    <span id="statusText">Ready</span>
+  </div>
+
+  <div class="limit-selector">
+    <label for="limitSelect">Scan limit:</label>
+    <select id="limitSelect">
+      <option value="default" selected>Choose an option</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+      <option value="150">150</option>
+      <option value="200">200</option>
+      <option value="250">250</option>
+      <option value="300">300</option>
+    </select>
+  </div>
+
+  <div class="controls">
+    <button id="scanBtn" class="btn primary">Scan Reposts</button>
+    <button id="removeBtn" class="btn danger" disabled>Remove All</button>
+    <button id="pauseBtn" class="btn" disabled>Pause</button>
+    <button id="stopBtn" class="btn" disabled>Stop</button>
+  </div>
+
+  <div class="progress-container" id="progressContainer" hidden>
+    <div class="progress-bar">
+      <div id="progressFill" class="progress-fill"></div>
+    </div>
+    <span id="progressText">0 / 0</span>
+  </div>
+
+  <div class="log" id="logContainer"></div>
+  <div class="copyright">
+    <p>&copy; All rights reserved. Made by @a017aa</p>
+    <a href="https://www.buymeacoffee.com/a017aa" target="_blank" rel="noopener" style="color:#F0997B; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+      <i class="ti ti-coffee" style="font-size:14px;"></i> Buy me a coffee
+    </a>
+  </div>
+  <div id="completionModal" class="modal" hidden>
+    <div class="modal-content">
+      <p>The process is done. You need to reload in order to see the changes or continue removing reposts.</p>
+      <button id="modalOkBtn">OK</button>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

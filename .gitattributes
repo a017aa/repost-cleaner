@@ -1,2 +1,4 @@
-app/** linguist-documentation=false
-app/** linguist-vendored
+*.js linguist-documentation=false
+*.js linguist-vendored=false
+*.html linguist-documentation=false
+*.css linguist-documentation=false
